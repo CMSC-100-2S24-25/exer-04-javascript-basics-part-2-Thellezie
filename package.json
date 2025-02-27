@@ -1,0 +1,16 @@
+{
+  "name": "exer-04-javascript-basics-part-2-thellezie",
+  "version": "1.0.0",
+  "description": "CMSC 100 - Exercise 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Luthelle L. Fernandez",
+  "license": "ISC",
+  "bugs": "",
+  "homepage": ""
+}
