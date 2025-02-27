@@ -4,4 +4,6 @@ EXERCISE 4 : JAVASCRIPT PART 2
 Author:  Luthelle L. Fernandez
 Student Number: 2023 - 12438
 
-What are your key takeaways from this exercise? 
+What are your key takeaways from this exercise? The syntax difference of CommonJS and ES Module
+
+Reason of Late Submission : My laptop screen was not functioning yesterday because of my laptop hinge loosen.

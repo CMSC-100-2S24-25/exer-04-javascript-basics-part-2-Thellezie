@@ -44,7 +44,8 @@ function generateUniqueID(Fname, Lname){
 // Function : add account -> makes use of validator module 
 function addAccount(Fname, Lname, email, age){
     if(typeof(Fname) !== 'string' || typeof(Lname) !== 'string' || typeof(email) !== 'string' || typeof(age) !== 'number' || Fname === '' || Lname === '' || email === ''){
-        return "Error: All fields must be present";
+        console.log("Error: All fields must be present");
+        return false
     }
     
     // Check if email is in a valid format
@@ -58,11 +59,17 @@ function addAccount(Fname, Lname, email, age){
             const user_info = Fname + ',' + Lname + ',' + email + ',' + age + ',' + UniqueID + '\n'; // join data to be pushed in the users.txt
             
             appendFileSync('users.txt', user_info , 'utf8'); 
+            
+            console.log("User data is now saved");
+            return true;
+        } else {
+            console.log("Error: Age is not valid");
+            return false
         }
     }else { // -> Email is not valid
-        return "Error: Email is not valid";
+        console.log("Error: Email is not valid");
+        return false
     }
 }
 
-console.log(generateUniqueID('Luthelle', 'Fernandez'));
-console.log(addAccount('Luthelle', 'Fernandez', 'llfernandez4@up.edu.ph', 18));
+export { generateUniqueID, addAccount }
